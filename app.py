@@ -13,10 +13,10 @@ from reportlab.lib.utils import ImageReader
 import datetime
 import uuid
 import gspread
-from oauth2client.service_account import ServiceAccountCredentials
 import time
 import requests
 from requests.exceptions import RequestException
+from google.oauth2.service_account import Credentials
 
 # Validate OpenAI API key
 if not st.secrets.get("OPENAI_API_KEY"):
@@ -182,14 +182,12 @@ def auto_group_large_data(df, x_col):
 def save_feedback_to_gsheet(email, feedback):
     try:
         scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-        creds = ServiceAccountCredentials.from_json_keyfile_name("credentials.json", scope)
+        creds = Credentials.from_service_account_info(st.secrets["gspread"], scopes=scope)
         client = gspread.authorize(creds)
         sheet = client.open("Aarekha Feedback").sheet1
         timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         chart_count = st.session_state.get("chart_count", "N/A")
         sheet.append_row([timestamp, email, chart_count, feedback])
-    except FileNotFoundError:
-        st.error("❌ Google Sheets credentials not found.")
     except Exception as e:
         st.error(f"❌ Failed to save feedback: {e}")
 
@@ -546,8 +544,4 @@ with st.form("email_feedback_form"):
             with open("session_log.txt", "a") as f:
                 f.write(f"{datetime.datetime.now()} | Session ID: {st.session_state.user_id} | Email: {email} | Charts Generated: {st.session_state.get('chart_count', 'N/A')} | Feedback: {feedback}\n")
         else:
-<<<<<<< HEAD
             st.warning("⚠️ Please enter your email to continue.")
-=======
-            st.warning("⚠️ Please enter your email to continue.")
->>>>>>> 035e4835d9f7fc42d872a97be1bf624f8463d1a8
