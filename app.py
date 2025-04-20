@@ -546,4 +546,8 @@ with st.form("email_feedback_form"):
             with open("session_log.txt", "a") as f:
                 f.write(f"{datetime.datetime.now()} | Session ID: {st.session_state.user_id} | Email: {email} | Charts Generated: {st.session_state.get('chart_count', 'N/A')} | Feedback: {feedback}\n")
         else:
+<<<<<<< HEAD
             st.warning("⚠️ Please enter your email to continue.")
+=======
+            st.warning("⚠️ Please enter your email to continue.")
+>>>>>>> 035e4835d9f7fc42d872a97be1bf624f8463d1a8
