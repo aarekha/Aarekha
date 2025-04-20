@@ -1,16 +1,7 @@
-<<<<<<< HEAD
 [theme]
 base = "light"
 primaryColor = "#1e40af"
 backgroundColor = "#e0e7ff"
 secondaryBackgroundColor = "#ffffff"
 textColor = "#000000"
-=======
-[theme]
-base = "light"
-primaryColor = "#1e40af"
-backgroundColor = "#e0e7ff"
-secondaryBackgroundColor = "#ffffff"
-textColor = "#000000"
->>>>>>> c7a2bfa4b93c8f7274ac0d9378151f149edcaf1b
 font = "sans serif"
