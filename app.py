@@ -58,16 +58,16 @@ st.markdown(
             color: #000000 !important;
             opacity: 0.6 !important;
         }
-        .stFileUploader label, 
+        .stFileUploader, .stFileUploader label, 
+        .stFileUploader [data-testid="stFileUploaderDropzone"], 
         .stFileUploader [data-testid="stFileUploaderDropzone"] p, 
         .stFileUploader [data-testid="stFileUploaderFileName"], 
         .stFileUploader [data-testid="stFileUploaderFileSize"], 
         .stFileUploader [data-testid="stFileUploaderCloseButton"],
-        .stFileUploader div div div {
+        .stFileUploader div, .stFileUploader div div div, 
+        .stFileUploader div[data-testid="stFileUploaderFile"] {
             color: #000000 !important;
-        }
-        .stFileUploader {
-            background-color: white;
+            background-color: white !important;
             border: 2px solid #1e40af;
             border-radius: 8px;
             padding: 15px;
@@ -79,34 +79,22 @@ st.markdown(
         .stSidebar .stSlider > div > div > div {
             color: #000000 !important;
         }
-        h3, 
-        .stSelectbox label, 
-        .stColorPicker label, 
-        .stExpander label,
-        [data-testid="stExpander"] > div > div > div > label,
+        h3, .stSelectbox label, .stColorPicker, .stColorPicker label, 
+        .stExpander label, [data-testid="stExpander"] > div > div > div > label,
         [data-testid="stExpander"] > div > div > div > p,
-        [data-testid="stExpander"] p,
-        [data-testid="stExpander"] div[role="button"] p {
+        [data-testid="stExpander"] p, [data-testid="stExpander"] div[role="button"] p {
             color: #000000 !important;
         }
-        .stTextInput label, 
-        .stTextArea label,
-        [data-testid="stForm"] > div > label {
+        .stTextInput label, .stTextArea label, [data-testid="stForm"] > div > label {
             color: #000000 !important;
         }
-        [data-testid="stSlider"] label,
-        [data-testid="stSlider"] span,
-        [data-testid="stSliderValue"],
-        div[data-testid="stSlider"] div div div div,
-        div[data-testid="stSlider"] span,
-        div[data-testid="stSlider"] div[data-testid="stTickBar"] div,
+        [data-testid="stSlider"] label, [data-testid="stSlider"] span,
+        [data-testid="stSliderValue"], div[data-testid="stSlider"] div div div div,
+        div[data-testid="stSlider"] span, div[data-testid="stSlider"] div[data-testid="stTickBar"] div,
         div[data-testid="stSlider"] div[data-testid="stTickBar"] span,
-        div[data-testid="stSlider"] div div span,
-        div[data-testid="stSlider"] .stTickBar span,
-        div[data-testid="stSlider"] .stTickBar div,
-        div[data-testid="stSlider"] [data-testid="stTickMarks"] span,
-        div[data-testid="stSlider"] [data-testid="stTickMarks"] div,
-        div[data-testid="stSlider"] * {
+        div[data-testid="stSlider"] div div span, div[data-testid="stSlider"] .stTickBar span,
+        div[data-testid="stSlider"] .stTickBar div, div[data-testid="stSlider"] [data-testid="stTickMarks"] span,
+        div[data-testid="stSlider"] [data-testid="stTickMarks"] div, div[data-testid="stSlider"] * {
             color: #000000 !important;
         }
         [data-testid="stSpinner"] p {
@@ -267,17 +255,12 @@ Respond only in this valid JSON list format, ensuring proper escaping of special
                         if raw_response.startswith("```"):
                             raw_response = raw_response.split("\n", 1)[1].rsplit("\n", 1)[0]
                         raw_response = raw_response.replace("\r", "").replace("\t", " ")
-                        # Log raw response for debugging
-                        # with open("api_response_log.txt", "a") as f:
-                        #     f.write(f"{datetime.datetime.now()} | Attempt {attempt + 1} | Response: {raw_response[:500]}...\n")
                         st.session_state.chart_plans = json.loads(raw_response)
                         st.session_state.insights = [plan.get("insight", "") for plan in st.session_state.chart_plans]
                         st.session_state.data_hash = hash(sample)
                         st.session_state.chart_count = num_charts
                         break
                     except json.JSONDecodeError as je:
-                        # with open("api_response_log.txt", "a") as f:
-                        #     f.write(f"{datetime.datetime.now()} | JSON Error: {je} | Raw Response: {raw_response[:500]}...\n")
                         if attempt < max_retries - 1:
                             st.warning(f"⚠️ Attempt {attempt + 1} failed due to invalid JSON response: {je}. Retrying in 5 seconds...")
                             time.sleep(5)
@@ -309,8 +292,6 @@ Respond only in this valid JSON list format, ensuring proper escaping of special
                             st.session_state.insights = [plan["insight"] for plan in st.session_state.chart_plans]
         except Exception as e:
             st.error(f"❌ Unexpected error during chart generation: {e}")
-            # with open("error_log.txt", "a") as f:
-            #     f.write(f"{datetime.datetime.now()} | Error: {e} | Raw Response: {raw_response[:500] if 'raw_response' in locals() else 'N/A'}...\n")
             st.session_state.chart_plans = [
                 {
                     "chart_type": "Bar",
@@ -478,14 +459,10 @@ Respond only in this valid JSON list format, ensuring proper escaping of special
                         st.session_state.insights = insights
                     except json.JSONDecodeError as je:
                         st.warning(f"⚠️ Insight regeneration for Chart {idx+1} failed due to invalid JSON: {je}. Keeping previous insight.")
-                        # with open("api_response_log.txt", "a") as f:
-                        #     f.write(f"{datetime.datetime.now()} | Insight JSON Error: {je} | Raw Insight: {raw_insight[:500]}...\n")
                     except requests.exceptions.RequestException as re:
                         st.warning(f"⚠️ Insight regeneration for Chart {idx+1} failed due to network issue: {re}. Keeping previous insight.")
                     except Exception as e:
                         st.warning(f"⚠️ Insight regeneration for Chart {idx+1} failed: {e}. Keeping previous insight.")
-                        # with open("error_log.txt", "a") as f:
-                        #     f.write(f"{datetime.datetime.now()} | Insight Error: {e} | Raw Insight: {raw_insight[:500] if 'raw_insight' in locals() else 'N/A'}...\n")
 
                 st.markdown(f"<div class='custom-card' style='padding: 10px; font-size: 14px; color: #333'><strong>Insight:</strong><br>{insights[idx].replace(chr(10), '<br>')}</div>", unsafe_allow_html=True)
 
@@ -541,7 +518,5 @@ with st.form("email_feedback_form"):
         if email:
             save_feedback_to_gsheet(email, feedback)
             st.success("✅ Thanks for your feedback!")
-            # with open("session_log.txt", "a") as f:
-            #     f.write(f"{datetime.datetime.now()} | Session ID: {st.session_state.user_id} | Email: {email} | Charts Generated: {st.session_state.get('chart_count', 'N/A')} | Feedback: {feedback}\n")
         else:
             st.warning("⚠️ Please enter your email to continue.")
