@@ -252,35 +252,32 @@ Respond only in this valid JSON list format, ensuring proper escaping of special
                 max_retries = 3
                 for attempt in range(max_retries):
                     try:
-from openai import OpenAI
-client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
-
-res = client.chat.completions.create(
-    model="gpt-3.5-turbo",
-    messages=[
-        {"role": "system", "content": system_msg},
-        {"role": "user", "content": f"Here is a data sample:\n{sample}\n\nGenerate {num_charts} intelligent chart recommendations."}
-    ],
-    temperature=0.4,
-    max_tokens=1500,
-    timeout=30
-)
+                        res = openai.ChatCompletion.create(
+                            model="gpt-3.5-turbo",
+                            messages=[
+                                {"role": "system", "content": system_msg},
+                                {"role": "user", "content": f"Here is a data sample:\n{sample}\n\nGenerate {num_charts} intelligent chart recommendations."}
+                            ],
+                            temperature=0.4,
+                            max_tokens=1500,
+                            timeout=30
+                        )
                         # Clean the response to remove code block markers and control characters
                         raw_response = res.choices[0].message.content.strip()
                         if raw_response.startswith("```"):
                             raw_response = raw_response.split("\n", 1)[1].rsplit("\n", 1)[0]
                         raw_response = raw_response.replace("\r", "").replace("\t", " ")
                         # Log raw response for debugging
-                        with open("api_response_log.txt", "a") as f:
-                            f.write(f"{datetime.datetime.now()} | Attempt {attempt + 1} | Response: {raw_response[:500]}...\n")
+                        # with open("api_response_log.txt", "a") as f:
+                        #     f.write(f"{datetime.datetime.now()} | Attempt {attempt + 1} | Response: {raw_response[:500]}...\n")
                         st.session_state.chart_plans = json.loads(raw_response)
                         st.session_state.insights = [plan.get("insight", "") for plan in st.session_state.chart_plans]
                         st.session_state.data_hash = hash(sample)
                         st.session_state.chart_count = num_charts
                         break
                     except json.JSONDecodeError as je:
-                        with open("api_response_log.txt", "a") as f:
-                            f.write(f"{datetime.datetime.now()} | JSON Error: {je} | Raw Response: {raw_response[:500]}...\n")
+                        # with open("api_response_log.txt", "a") as f:
+                        #     f.write(f"{datetime.datetime.now()} | JSON Error: {je} | Raw Response: {raw_response[:500]}...\n")
                         if attempt < max_retries - 1:
                             st.warning(f"⚠️ Attempt {attempt + 1} failed due to invalid JSON response: {je}. Retrying in 5 seconds...")
                             time.sleep(5)
@@ -295,7 +292,7 @@ res = client.chat.completions.create(
                                 }
                             ] * num_charts
                             st.session_state.insights = [plan["insight"] for plan in st.session_state.chart_plans]
-                    except requests.exceptions.RequestException as re:
+                    except requests.exceptions	RequestException as re:
                         if attempt < max_retries - 1:
                             st.warning(f"⚠️ Attempt {attempt + 1} failed due to network issue: {re}. Retrying in 5 seconds...")
                             time.sleep(5)
@@ -312,8 +309,8 @@ res = client.chat.completions.create(
                             st.session_state.insights = [plan["insight"] for plan in st.session_state.chart_plans]
         except Exception as e:
             st.error(f"❌ Unexpected error during chart generation: {e}")
-            with open("error_log.txt", "a") as f:
-                f.write(f"{datetime.datetime.now()} | Error: {e} | Raw Response: {raw_response[:500] if 'raw_response' in locals() else 'N/A'}...\n")
+            # with open("error_log.txt", "a") as f:
+            #     f.write(f"{datetime.datetime.now()} | Error: {e} | Raw Response: {raw_response[:500] if 'raw_response' in locals() else 'N/A'}...\n")
             st.session_state.chart_plans = [
                 {
                     "chart_type": "Bar",
@@ -481,14 +478,14 @@ res = client.chat.completions.create(
                         st.session_state.insights = insights
                     except json.JSONDecodeError as je:
                         st.warning(f"⚠️ Insight regeneration for Chart {idx+1} failed due to invalid JSON: {je}. Keeping previous insight.")
-                        with open("api_response_log.txt", "a") as f:
-                            f.write(f"{datetime.datetime.now()} | Insight JSON Error: {je} | Raw Insight: {raw_insight[:500]}...\n")
+                        # with open("api_response_log.txt", "a") as f:
+                        #     f.write(f"{datetime.datetime.now()} | Insight JSON Error: {je} | Raw Insight: {raw_insight[:500]}...\n")
                     except requests.exceptions.RequestException as re:
                         st.warning(f"⚠️ Insight regeneration for Chart {idx+1} failed due to network issue: {re}. Keeping previous insight.")
                     except Exception as e:
                         st.warning(f"⚠️ Insight regeneration for Chart {idx+1} failed: {e}. Keeping previous insight.")
-                        with open("error_log.txt", "a") as f:
-                            f.write(f"{datetime.datetime.now()} | Insight Error: {e} | Raw Insight: {raw_insight[:500] if 'raw_insight' in locals() else 'N/A'}...\n")
+                        # with open("error_log.txt", "a") as f:
+                        #     f.write(f"{datetime.datetime.now()} | Insight Error: {e} | Raw Insight: {raw_insight[:500] if 'raw_insight' in locals() else 'N/A'}...\n")
 
                 st.markdown(f"<div class='custom-card' style='padding: 10px; font-size: 14px; color: #333'><strong>Insight:</strong><br>{insights[idx].replace(chr(10), '<br>')}</div>", unsafe_allow_html=True)
 
@@ -544,7 +541,7 @@ with st.form("email_feedback_form"):
         if email:
             save_feedback_to_gsheet(email, feedback)
             st.success("✅ Thanks for your feedback!")
-            with open("session_log.txt", "a") as f:
-                f.write(f"{datetime.datetime.now()} | Session ID: {st.session_state.user_id} | Email: {email} | Charts Generated: {st.session_state.get('chart_count', 'N/A')} | Feedback: {feedback}\n")
+            # with open("session_log.txt", "a") as f:
+            #     f.write(f"{datetime.datetime.now()} | Session ID: {st.session_state.user_id} | Email: {email} | Charts Generated: {st.session_state.get('chart_count', 'N/A')} | Feedback: {feedback}\n")
         else:
             st.warning("⚠️ Please enter your email to continue.")
