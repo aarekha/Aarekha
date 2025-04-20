@@ -292,7 +292,7 @@ Respond only in this valid JSON list format, ensuring proper escaping of special
                                 }
                             ] * num_charts
                             st.session_state.insights = [plan["insight"] for plan in st.session_state.chart_plans]
-                    except requests.exceptions	RequestException as re:
+                    except requests.exceptions.RequestException as re:
                         if attempt < max_retries - 1:
                             st.warning(f"⚠️ Attempt {attempt + 1} failed due to network issue: {re}. Retrying in 5 seconds...")
                             time.sleep(5)
@@ -365,7 +365,7 @@ Respond only in this valid JSON list format, ensuring proper escaping of special
                         selected = st.multiselect(f"Filter {col}", df[col].unique(), default=df[col].unique(), key=f"filter_{col}_{idx}")
                         perchart_filters[col] = selected
 
-                chart_df = filtered_df.copy()
+                chart_dp = filtered_df.copy()
                 for col, vals in perchart_filters.items():
                     chart_df = chart_df[chart_df[col].isin(vals)]
 
