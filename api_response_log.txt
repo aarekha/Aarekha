@@ -1,0 +1,24 @@
+2025-04-20 17:13:33.793769 | Attempt 1 | Response: [
+  {
+    "chart_type": "Bar",
+    "x": "Category",
+    "y": "Total Sales",
+    "insight": "- **Key Observation:** Electronics category has the highest total sales.\n- **Business Impact:** Focusing on electronics products can significantly boost revenue.\n- **Recommended Action:** Allocate more marketing resources to promote electronics items."
+  },
+  {
+    "chart_type": "Pie",
+    "x": "Region",
+    "y": "Order Count",
+    "insight": "- **Key Observation:** North region has the highest number o...
+2025-04-20 17:14:18.797396 | Attempt 1 | Response: [
+  {
+    "chart_type": "Bar",
+    "x": "Region",
+    "y": "Order Count",
+    "insight": "- **Key Observation:** The East region has the highest number of orders.\n- **Business Impact:** Focusing on the East region may lead to increased sales and revenue.\n- **Recommended Action:** Allocate more marketing resources to the East region to capitalize on the high demand."
+  },
+  {
+    "chart_type": "Line",
+    "x": "Month",
+    "y": "Total Sales",
+    "insight": "- **Key Observation:** Total sales p...
