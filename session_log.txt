@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2025-04-16 12:35:30.720056 | Session ID: f476c9c0-9c93-4dda-afc9-3503bf39adb1 | Email: 
 2025-04-16 12:35:53.852614 | Session ID: f476c9c0-9c93-4dda-afc9-3503bf39adb1 | Email: 
 2025-04-16 12:36:00.466600 | Session ID: f476c9c0-9c93-4dda-afc9-3503bf39adb1 | Email: 
@@ -268,3 +269,275 @@
 2025-04-19 20:54:43.026119 | Filter Values: {}
 2025-04-19 20:54:43.026156 | Filtered_df Shape: (500, 7)
 2025-04-19 20:54:43.036767 | Unexpected Error: '\n    "chart_type"'
+=======
+2025-04-16 12:35:30.720056 | Session ID: f476c9c0-9c93-4dda-afc9-3503bf39adb1 | Email: 
+2025-04-16 12:35:53.852614 | Session ID: f476c9c0-9c93-4dda-afc9-3503bf39adb1 | Email: 
+2025-04-16 12:36:00.466600 | Session ID: f476c9c0-9c93-4dda-afc9-3503bf39adb1 | Email: 
+2025-04-16 12:36:08.050418 | Session ID: f476c9c0-9c93-4dda-afc9-3503bf39adb1 | Email: 
+2025-04-16 12:36:33.200547 | Session ID: f476c9c0-9c93-4dda-afc9-3503bf39adb1 | Email: 
+2025-04-16 12:37:05.359423 | Session ID: f476c9c0-9c93-4dda-afc9-3503bf39adb1 | Email: 
+2025-04-16 12:39:30.244101 | Session ID: f476c9c0-9c93-4dda-afc9-3503bf39adb1 | Email: 
+2025-04-16 12:40:13.097282 | Session ID: f476c9c0-9c93-4dda-afc9-3503bf39adb1 | Email: 
+2025-04-16 12:40:26.453492 | Session ID: f476c9c0-9c93-4dda-afc9-3503bf39adb1 | Email: 
+2025-04-16 20:15:49.151926 | Session ID: fba6b892-678c-45ca-8949-d146c9d84807 | Email: 
+2025-04-16 20:16:09.690006 | Session ID: fba6b892-678c-45ca-8949-d146c9d84807 | Email: inileshvermaa@gmail.com
+2025-04-16 20:16:31.880234 | Session ID: fba6b892-678c-45ca-8949-d146c9d84807 | Email: inileshvermaa@gmail.com
+2025-04-16 20:18:06.905636 | Session ID: b326023b-5d6f-4550-b1b6-d5437dfe3afa | Email: 
+2025-04-16 20:18:15.821509 | Session ID: b326023b-5d6f-4550-b1b6-d5437dfe3afa | Email: 
+2025-04-16 20:18:26.629109 | Session ID: b326023b-5d6f-4550-b1b6-d5437dfe3afa | Email: 
+2025-04-16 20:25:22.161063 | Session ID: 14049026-5aa2-4dfb-870f-f4acc6528416 | Email: 
+2025-04-16 20:29:26.293396 | Session ID: 8f691e17-6d40-409c-96ab-7717c9893637 | Email: 
+2025-04-16 20:29:45.095629 | Session ID: 8f691e17-6d40-409c-96ab-7717c9893637 | Email: 
+2025-04-16 20:30:09.673861 | Session ID: 8f691e17-6d40-409c-96ab-7717c9893637 | Email: inileshvermaa@gmail.com
+2025-04-16 20:30:23.245978 | Session ID: 8f691e17-6d40-409c-96ab-7717c9893637 | Email: inileshvermaa@gmail.com
+2025-04-16 20:31:00.283954 | Session ID: 8f691e17-6d40-409c-96ab-7717c9893637 | Email: inileshverma@gmail.com
+2025-04-16 20:31:05.134039 | Session ID: 8f691e17-6d40-409c-96ab-7717c9893637 | Email: inileshverma@gmail.com
+2025-04-16 20:32:09.879586 | Session ID: 8f691e17-6d40-409c-96ab-7717c9893637 | Email: inileshverma@gmail.com
+2025-04-16 20:32:27.983081 | Session ID: 8f691e17-6d40-409c-96ab-7717c9893637 | Email: inileshvermskwe@gmail.com
+2025-04-16 20:32:34.525280 | Session ID: 8f691e17-6d40-409c-96ab-7717c9893637 | Email: inileshvermskwe@gmail.com
+2025-04-16 20:40:04.365429 | Session ID: 899046e7-0ad6-4ab4-a255-1cd8d370b117 | Email: demo@gmail.com | Charts Generated: N/A | Feedback: This is a feedback test.
+2025-04-16 20:40:39.321446 | Session ID: 899046e7-0ad6-4ab4-a255-1cd8d370b117 | Email: demo1@gmail.com | Charts Generated: 5 | Feedback: This is a feedback test 2.
+2025-04-16 20:42:49.947348 | Session ID: 899046e7-0ad6-4ab4-a255-1cd8d370b117 | Email:  | Charts Generated: 5 | Feedback: This is a feedback test 3.
+2025-04-17 13:59:23.415324 | Session ID: d96c5bc3-83ed-474a-8f3d-522a26d8388f | Email: inileshvermaa@gmail.com | Charts Generated: 5 | Feedback: This is sample feedback.
+2025-04-17 14:25:54.738228 | Session ID: 5f6d0eda-dc23-472a-8822-a7f61c95bba6 | Email: inileshvermaa@gmail.com | Charts Generated: N/A | Feedback: This is a sample feedback 4.
+2025-04-19 20:25:58.402134 | Raw API Response: [
+  {
+    "chart_type": "Bar",
+    "x": "State",
+    "y": "Order Count",
+    "aggregation": "Count",
+    "insight": "- **Key Observation:** Distribution of orders by State.\n- **Business Impact:** Helps identify regions with high and low order counts.\n- **Recommended Action:** Focus marketing efforts on states with low order counts to increase sales."
+  },
+  {
+    "chart_type": "Pie",
+    "x": "City",
+    "y": "Order Count",
+    "aggregation": "Count",
+    "insight": "- **Key Observation:** Proportion of orders from different cities.\n- **Business Impact:** Highlights cities contributing the most to order count.\n- **Recommended Action:** Target marketing campaigns towards cities with the highest order counts for increased customer engagement."
+  },
+  {
+    "chart_type": "Histogram",
+    "x": "Order Date",
+    "y": "Order Count",
+    "aggregation": "Count",
+    "insight": "- **Key Observation:** Order count distribution over time.\n- **Business Impact:** Shows trends in order frequency over different time periods.\n- **Recommended Action:** Analyze peaks and dips to optimize inventory management and staffing levels."
+  },
+  {
+    "chart_type": "Bar",
+    "x": "CustomerName",
+    "y": "Order Count",
+    "aggregation": "Count",
+    "insight": "- **Key Observation:** Number of orders by customer.\n- **Business Impact:** Identifies top customers based on order count.\n- **Recommended Action:** Offer loyalty rewards or personalized discounts to high-order customers to increase retention."
+  },
+  {
+    "chart_type": "Bar",
+    "x": "CustomerName",
+    "y": "Order Count",
+    "aggregation": "Count",
+    "insight": "- **Key Observation:** Comparison of order counts among customers.\n- **Business Impact:** Highlights customer segments with varying order frequencies.\n- **Recommended Action:** Tailor marketing strategies based on customer segments to improve overall sales performance."
+  }
+]
+2025-04-19 20:30:20.662664 | Raw API Response: [
+  {
+    "chart_type": "Bar",
+    "x": "State",
+    "y": "Order Count",
+    "aggregation": "Count",
+    "insight": "- **Key Observation:** Distribution of orders by State.\n- **Business Impact:** Understanding which States have the highest order counts.\n- **Recommended Action:** Focus marketing efforts or logistics optimization in States with high order counts."
+  },
+  {
+    "chart_type": "Pie",
+    "x": "City",
+    "y": "Order Count",
+    "aggregation": "Count",
+    "insight": "- **Key Observation:** Proportion of orders from different Cities.\n- **Business Impact:** Identifying key Cities driving order volume.\n- **Recommended Action:** Target promotions or partnerships in Cities with significant order contributions."
+  },
+  {
+    "chart_type": "Histogram",
+    "x": "Order Date",
+    "y": "Order Count",
+    "aggregation": "Count",
+    "insight": "- **Key Observation:** Order count distribution over time.\n- **Business Impact:** Understanding order trends and seasonality.\n- **Recommended Action:** Plan inventory and staffing levels based on order patterns throughout the year."
+  },
+  {
+    "chart_type": "Bar",
+    "x": "CustomerName",
+    "y": "Order Count",
+    "aggregation": "Count",
+    "insight": "- **Key Observation:** Number of orders per customer.\n- **Business Impact:** Identifying loyal or high-volume customers.\n- **Recommended Action:** Offer personalized promotions to retain loyal customers and encourage repeat purchases."
+  },
+  {
+    "chart_type": "Bar",
+    "x": "State",
+    "y": "Order Count",
+    "aggregation": "Sum",
+    "insight": "- **Key Observation:** Total order count per State.\n- **Business Impact:** Highlighting States with the highest overall order volume.\n- **Recommended Action:** Allocate resources and marketing budget based on the States contributing the most to order count."
+  }
+]
+2025-04-19 20:30:20.686885 | Chart 1 Binning: x=State, status=No valid numeric data after dropping NaN
+2025-04-19 20:30:26.907911 | Chart 2 Binning: x=City, status=No valid numeric data after dropping NaN
+2025-04-19 20:30:27.199450 | Chart 3 Binning: x=Order Date, status=No valid numeric data after dropping NaN
+2025-04-19 20:30:27.671776 | Chart 4 Binning: x=CustomerName, status=No valid numeric data after dropping NaN
+2025-04-19 20:30:27.800380 | Chart 5 Binning: x=State, status=No valid numeric data after dropping NaN
+2025-04-19 20:35:19.518089 | Raw API Response: [
+  {
+    "chart_type": "Bar",
+    "x": "State",
+    "y": "Order Count",
+    "aggregation": "Count",
+    "insight": "- **Key Observation:** Distribution of orders by state.\n- **Business Impact:** Understanding which states have the highest order count.\n- **Recommended Action:** Target marketing efforts or logistics improvements in states with high order counts."
+  },
+  {
+    "chart_type": "Pie",
+    "x": "City",
+    "y": "Order Count",
+    "aggregation": "Count",
+    "insight": "- **Key Observation:** Proportion of orders from different cities.\n- **Business Impact:** Identifying cities contributing the most to the order count.\n- **Recommended Action:** Focus on cities with the highest order counts for localized promotions or expansion."
+  },
+  {
+    "chart_type": "Histogram",
+    "x": "Order Date",
+    "y": "Order Count",
+    "aggregation": "Count",
+    "insight": "- **Key Observation:** Distribution of orders over time.\n- **Business Impact:** Understanding order patterns and seasonality.\n- **Recommended Action:** Plan inventory and staffing based on order trends throughout the year."
+  },
+  {
+    "chart_type": "Bar",
+    "x": "CustomerName",
+    "y": "Order Count",
+    "aggregation": "Count",
+    "insight": "- **Key Observation:** Number of orders per customer.\n- **Business Impact:** Identifying loyal or high-volume customers.\n- **Recommended Action:** Offer personalized promotions to loyal customers to increase retention and sales."
+  },
+  {
+    "chart_type": "Bar",
+    "x": "State",
+    "y": "Order Count",
+    "aggregation": "Sum",
+    "insight": "- **Key Observation:** Total order count per state.\n- **Business Impact:** Comparing the total volume of orders across states.\n- **Recommended Action:** Allocate resources or tailor marketing strategies based on states with the highest total order count."
+  }
+]
+2025-04-19 20:35:19.551823 | Chart 1 Binning: x=State, status=No valid numeric data after dropping NaN
+2025-04-19 20:35:19.557080 | Chart 1 Empty: agg_df empty or invalid | x=State, y=Order Count, agg=Count, shape=(0, 2)
+2025-04-19 20:35:19.878931 | Chart 1 Failure: "['State'] not in index" | x=State, y=Order Count, chart_type=Bar, chart_df_shape=(500, 7), agg_df_shape=(0, 2)
+2025-04-19 20:35:19.887145 | Chart 2 Binning: x=City, status=No valid numeric data after dropping NaN
+2025-04-19 20:35:19.889264 | Chart 2 Empty: agg_df empty or invalid | x=City, y=None, agg=Count, shape=(500, 7)
+2025-04-19 20:35:19.922968 | Chart 2 Failure: "['City'] not in index" | x=City, y=None, chart_type=Pie, chart_df_shape=(500, 7), agg_df_shape=(0, 2)
+2025-04-19 20:35:19.933787 | Chart 3 Binning: x=Order Date, status=No valid numeric data after dropping NaN
+2025-04-19 20:35:19.935752 | Chart 3 Empty: agg_df empty or invalid | x=Order Date, y=None, agg=Count, shape=(500, 7)
+2025-04-19 20:35:19.964174 | Chart 3 Failure: "['Order Date'] not in index" | x=Order Date, y=None, chart_type=Histogram, chart_df_shape=(500, 7), agg_df_shape=(0, 2)
+2025-04-19 20:35:19.970996 | Chart 4 Binning: x=CustomerName, status=No valid numeric data after dropping NaN
+2025-04-19 20:35:19.973631 | Chart 4 Empty: agg_df empty or invalid | x=CustomerName, y=Order Count, agg=Count, shape=(0, 2)
+2025-04-19 20:35:20.001258 | Chart 4 Failure: "['CustomerName'] not in index" | x=CustomerName, y=Order Count, chart_type=Bar, chart_df_shape=(500, 7), agg_df_shape=(0, 2)
+2025-04-19 20:35:20.007363 | Chart 5 Binning: x=State, status=No valid numeric data after dropping NaN
+2025-04-19 20:35:20.014020 | Chart 5 Empty: agg_df empty or invalid | x=State, y=Order Count, agg=Sum, shape=(0, 2)
+2025-04-19 20:35:20.046485 | Chart 5 Failure: "['State'] not in index" | x=State, y=Order Count, chart_type=Bar, chart_df_shape=(500, 7), agg_df_shape=(0, 2)
+2025-04-19 20:35:54.975916 | Raw API Response: [
+  {
+    "chart_type": "Bar",
+    "x": "Category",
+    "y": "Quantity",
+    "aggregation": "Sum",
+    "insight": "- **Key Observation:** Category 116 has the highest total quantity sold.\n- **Business Impact:** Category 116 products are popular and in high demand.\n- **Recommended Action:** Increase stock levels for Category 116 products to meet customer demand."
+  },
+  {
+    "chart_type": "Pie",
+    "x": "Region",
+    "y": "Total Sales",
+    "aggregation": "Sum",
+    "insight": "- **Key Observation:** Region-wise distribution of total sales.\n- **Business Impact:** Region X contributes the highest percentage to total sales.\n- **Recommended Action:** Focus marketing efforts on Region X to further boost sales."
+  },
+  {
+    "chart_type": "Histogram",
+    "x": "Price",
+    "y": "Quantity",
+    "aggregation": "Count",
+    "insight": "- **Key Observation:** Most products are priced between $100 and $200.\n- **Business Impact:** Understanding the price distribution of products sold.\n- **Recommended Action:** Consider introducing more products within the $100-$200 price range."
+  },
+  {
+    "chart_type": "Line",
+    "x": "Order Date",
+    "y": "Total Sales",
+    "aggregation": "Sum",
+    "insight": "- **Key Observation:** Total sales over time show fluctuations.\n- **Business Impact:** Identifying sales trends over different periods.\n- **Recommended Action:** Analyze factors contributing to sales spikes or dips for strategic planning."
+  },
+  {
+    "chart_type": "Stacked Bar",
+    "x": "Region",
+    "y": "Profit",
+    "aggregation": "Sum",
+    "insight": "- **Key Observation:** Profit distribution across regions.\n- **Business Impact:** Region Y has the highest profit margin.\n- **Recommended Action:** Investigate the reasons behind the higher profit margin in Region Y for potential business expansion strategies."
+  }
+]
+2025-04-19 20:35:55.000594 | Chart 1 Empty: chart_df empty after filtering | x=Category, y=Quantity, chart_type=Bar
+2025-04-19 20:35:55.038061 | Chart 1 Failure: name 'x_axis_binned' is not defined | x=Category, y=Quantity, chart_type=Bar, chart_df_shape=(0, 11), agg_df_shape=(0, 2)
+2025-04-19 20:35:55.048754 | Chart 2 Empty: chart_df empty after filtering | x=Region, y=None, chart_type=Pie
+2025-04-19 20:35:55.082257 | Chart 2 Failure: name 'x_axis_binned' is not defined | x=Region, y=None, chart_type=Pie, chart_df_shape=(0, 11), agg_df_shape=(0, 2)
+2025-04-19 20:35:55.092234 | Chart 3 Empty: chart_df empty after filtering | x=Price, y=None, chart_type=Histogram
+2025-04-19 20:35:55.124867 | Chart 3 Failure: name 'x_axis_binned' is not defined | x=Price, y=None, chart_type=Histogram, chart_df_shape=(0, 11), agg_df_shape=(0, 2)
+2025-04-19 20:35:55.133439 | Chart 4 Empty: chart_df empty after filtering | x=Order Date, y=Total Sales, chart_type=Line
+2025-04-19 20:35:55.166883 | Chart 4 Failure: name 'x_axis_binned' is not defined | x=Order Date, y=Total Sales, chart_type=Line, chart_df_shape=(0, 11), agg_df_shape=(0, 2)
+2025-04-19 20:35:55.179833 | Chart 5 Empty: chart_df empty after filtering | x=Region, y=Profit, chart_type=Stacked Bar
+2025-04-19 20:35:55.216646 | Chart 5 Failure: name 'x_axis_binned' is not defined | x=Region, y=Profit, chart_type=Stacked Bar, chart_df_shape=(0, 11), agg_df_shape=(0, 2)
+2025-04-19 20:41:15.666946 | Raw API Response: [
+  {
+    "chart_type": "Bar",
+    "x": "State",
+    "y": "Order Count",
+    "aggregation": "Count",
+    "insight": "- **Key Observation:** Distribution of orders by state.\n- **Business Impact:** Helps identify regions with high or low order counts.\n- **Recommended Action:** Focus marketing efforts on states with low order counts to increase sales."
+  },
+  {
+    "chart_type": "Line",
+    "x": "Order Date",
+    "y": "Quantity",
+    "aggregation": "Sum",
+    "insight": "- **Key Observation:** Fluctuations in total quantity ordered over time.\n- **Business Impact:** Understanding seasonal trends in order quantities.\n- **Recommended Action:** Plan inventory levels based on seasonal demand patterns."
+  },
+  {
+    "chart_type": "Histogram",
+    "x": "Quantity",
+    "y": "Order Count",
+    "aggregation": "Count",
+    "insight": "- **Key Observation:** Distribution of order counts based on quantity.\n- **Business Impact:** Helps identify common order sizes.\n- **Recommended Action:** Offer promotions for popular order quantities to boost sales."
+  },
+  {
+    "chart_type": "Pie",
+    "x": "City",
+    "y": "Order Count",
+    "aggregation": "Count",
+    "insight": "- **Key Observation:** Proportion of orders from different cities.\n- **Business Impact:** Identifying key cities driving sales.\n- **Recommended Action:** Target marketing campaigns towards cities with the highest order counts."
+  },
+  {
+    "chart_type": "Box",
+    "x": "State",
+    "y": "Quantity",
+    "aggregation": "Sum",
+    "insight": "- **Key Observation:** Distribution of total quantities ordered by state.\n- **Business Impact:** Understanding variance in order sizes across states.\n- **Recommended Action:** Investigate reasons for outliers in states with unusually high or low total quantities."
+  }
+]
+2025-04-19 20:41:15.692183 | Chart 1 Binning: x=State, status=No valid numeric data after dropping NaN
+2025-04-19 20:41:15.696041 | Chart 1 Empty: agg_df empty or invalid | x=State, y=Order Count, agg=Count, shape=(0, 2)
+2025-04-19 20:41:15.985079 | Chart 1 Failure: "['State'] not in index" | x=State, y=Order Count, chart_type=Bar, chart_df_shape=(500, 8), agg_df_shape=(0, 2)
+2025-04-19 20:41:15.993940 | Chart 2 Binning: x=Order Date, status=No valid numeric data after dropping NaN
+2025-04-19 20:41:15.998077 | Chart 2 Empty: agg_df empty or invalid | x=Order Date, y=Quantity, agg=Sum, shape=(0, 2)
+2025-04-19 20:41:16.043043 | Chart 2 Failure: "['Order Date'] not in index" | x=Order Date, y=Quantity, chart_type=Line, chart_df_shape=(500, 8), agg_df_shape=(0, 2)
+2025-04-19 20:41:16.063222 | Chart 3 Binning: x=Quantity, status=Success
+2025-04-19 20:41:16.066493 | Chart 3 Empty: agg_df empty or invalid | x=Binned_X, y=None, agg=Count, shape=(500, 8)
+2025-04-19 20:41:16.112001 | Chart 3 Failure: "['Binned_X'] not in index" | x=Quantity, y=None, chart_type=Histogram, chart_df_shape=(500, 8), agg_df_shape=(0, 2)
+2025-04-19 20:41:16.121250 | Chart 4 Binning: x=City, status=No valid numeric data after dropping NaN
+2025-04-19 20:41:16.124193 | Chart 4 Empty: agg_df empty or invalid | x=City, y=None, agg=Count, shape=(500, 8)
+2025-04-19 20:41:16.164246 | Chart 4 Failure: "['City'] not in index" | x=City, y=None, chart_type=Pie, chart_df_shape=(500, 8), agg_df_shape=(0, 2)
+2025-04-19 20:41:16.175895 | Chart 5 Binning: x=State, status=No valid numeric data after dropping NaN
+2025-04-19 20:41:16.180645 | Chart 5 Empty: agg_df empty or invalid | x=State, y=Quantity, agg=Sum, shape=(0, 2)
+2025-04-19 20:41:16.215002 | Chart 5 Failure: "['State'] not in index" | x=State, y=Quantity, chart_type=Box, chart_df_shape=(500, 8), agg_df_shape=(0, 2)
+2025-04-19 20:48:46.145632 | Dataset Columns: ['Order ID', 'Order Date', 'CustomerName', 'State', 'City', 'Order Count', 'Quantity']
+2025-04-19 20:48:46.163883 | Unexpected Error: '\n    "chart_type"'
+2025-04-19 20:49:04.664277 | Dataset Columns: ['ï»¿Order ID', 'Order Date', 'Customer ID', 'Customer Name', 'Product', 'Category', 'Quantity', 'Price', 'Total Sales', 'Profit', 'Region']
+2025-04-19 20:49:24.847469 | Dataset Columns: ['Order ID', 'Amount', 'Profit', 'Quantity', 'Category', 'Sub-Category', 'PaymentMode']
+2025-04-19 20:54:42.994573 | Dataset Columns: ['Order ID', 'Order Date', 'CustomerName', 'State', 'City', 'Order Count', 'Quantity']
+2025-04-19 20:54:42.994623 | Dataset Shape: (500, 7)
+2025-04-19 20:54:42.994640 | Numeric Columns: ['Order Count', 'Quantity']
+2025-04-19 20:54:43.026119 | Filter Values: {}
+2025-04-19 20:54:43.026156 | Filtered_df Shape: (500, 7)
+2025-04-19 20:54:43.036767 | Unexpected Error: '\n    "chart_type"'
+>>>>>>> c7a2bfa4b93c8f7274ac0d9378151f149edcaf1b
