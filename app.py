@@ -252,16 +252,19 @@ Respond only in this valid JSON list format, ensuring proper escaping of special
                 max_retries = 3
                 for attempt in range(max_retries):
                     try:
-                        res = openai.ChatCompletion.create(
-                            model="gpt-3.5-turbo",
-                            messages=[
-                                {"role": "system", "content": system_msg},
-                                {"role": "user", "content": f"Here is a data sample:\n{sample}\n\nGenerate {num_charts} intelligent chart recommendations."}
-                            ],
-                            temperature=0.4,
-                            max_tokens=1500,
-                            timeout=30
-                        )
+from openai import OpenAI
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+
+res = client.chat.completions.create(
+    model="gpt-3.5-turbo",
+    messages=[
+        {"role": "system", "content": system_msg},
+        {"role": "user", "content": f"Here is a data sample:\n{sample}\n\nGenerate {num_charts} intelligent chart recommendations."}
+    ],
+    temperature=0.4,
+    max_tokens=1500,
+    timeout=30
+)
                         # Clean the response to remove code block markers and control characters
                         raw_response = res.choices[0].message.content.strip()
                         if raw_response.startswith("```"):
