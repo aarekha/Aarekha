@@ -365,7 +365,7 @@ Respond only in this valid JSON list format, ensuring proper escaping of special
                         selected = st.multiselect(f"Filter {col}", df[col].unique(), default=df[col].unique(), key=f"filter_{col}_{idx}")
                         perchart_filters[col] = selected
 
-                chart_dp = filtered_df.copy()
+                chart_df = filtered_df.copy()
                 for col, vals in perchart_filters.items():
                     chart_df = chart_df[chart_df[col].isin(vals)]
 
