@@ -58,14 +58,21 @@ st.markdown(
             color: #000000 !important;
             opacity: 0.6 !important;
         }
-        .stFileUploader, .stFileUploader label, 
+        /* File Uploader Styling */
+        .stFileUploader, 
+        .stFileUploader label, 
         .stFileUploader [data-testid="stFileUploaderDropzone"], 
         .stFileUploader [data-testid="stFileUploaderDropzone"] p, 
         .stFileUploader [data-testid="stFileUploaderFileName"], 
+        .stFileUploader [data-testid="stFileUploaderFileName"] p, 
         .stFileUploader [data-testid="stFileUploaderFileSize"], 
+        .stFileUploader [data-testid="stFileUploaderFileSize"] p, 
         .stFileUploader [data-testid="stFileUploaderCloseButton"],
-        .stFileUploader div, .stFileUploader div div div, 
-        .stFileUploader div[data-testid="stFileUploaderFile"] {
+        .stFileUploader div, 
+        .stFileUploader div div div, 
+        .stFileUploader div[data-testid="stFileUploaderFile"],
+        [data-testid="stFileUploader"] label,
+        [data-testid="stFileUploader"] p {
             color: #000000 !important;
             background-color: white !important;
             border: 2px solid #1e40af;
@@ -73,37 +80,58 @@ st.markdown(
             padding: 15px;
             margin-bottom: 20px;
         }
+        /* Color Picker Styling */
+        .stColorPicker, 
+        .stColorPicker label, 
+        [data-testid="stColorPicker"] label,
+        [data-testid="stColorPicker"] div > div > label {
+            color: #000000 !important;
+        }
         .stSidebar .stSlider label, 
         .stSidebar .stSlider [data-testid="stSliderValue"], 
         .stSidebar .stSlider span,
         .stSidebar .stSlider > div > div > div {
             color: #000000 !important;
         }
-        h3, .stSelectbox label, .stColorPicker, .stColorPicker label, 
-        .stExpander label, [data-testid="stExpander"] > div > div > div > label,
+        h3, .stSelectbox label, 
+        .stExpander label, 
+        [data-testid="stExpander"] > div > div > div > label,
         [data-testid="stExpander"] > div > div > div > p,
-        [data-testid="stExpander"] p, [data-testid="stExpander"] div[role="button"] p {
+        [data-testid="stExpander"] p, 
+        [data-testid="stExpander"] div[role="button"] p {
             color: #000000 !important;
         }
-        .stTextInput label, .stTextArea label, [data-testid="stForm"] > div > label {
+        .stTextInput label, 
+        .stTextArea label, 
+        [data-testid="stForm"] > div > label {
             color: #000000 !important;
         }
-        [data-testid="stSlider"] label, [data-testid="stSlider"] span,
-        [data-testid="stSliderValue"], div[data-testid="stSlider"] div div div div,
-        div[data-testid="stSlider"] span, div[data-testid="stSlider"] div[data-testid="stTickBar"] div,
+        [data-testid="stSlider"] label, 
+        [data-testid="stSlider"] span,
+        [data-testid="stSliderValue"], 
+        div[data-testid="stSlider"] div div div div,
+        div[data-testid="stSlider"] span, 
+        div[data-testid="stSlider"] div[data-testid="stTickBar"] div,
         div[data-testid="stSlider"] div[data-testid="stTickBar"] span,
-        div[data-testid="stSlider"] div div span, div[data-testid="stSlider"] .stTickBar span,
-        div[data-testid="stSlider"] .stTickBar div, div[data-testid="stSlider"] [data-testid="stTickMarks"] span,
-        div[data-testid="stSlider"] [data-testid="stTickMarks"] div, div[data-testid="stSlider"] * {
+        div[data-testid="stSlider"] div div span, 
+        div[data-testid="stSlider"] .stTickBar span,
+        div[data-testid="stSlider"] .stTickBar div, 
+        div[data-testid="stSlider"] [data-testid="stTickMarks"] span,
+        div[data-testid="stSlider"] [data-testid="stTickMarks"] div, 
+        div[data-testid="stSlider"] * {
             color: #000000 !important;
         }
         [data-testid="stSpinner"] p {
             color: #000000 !important;
         }
-        .stAlert, [data-testid="stError"], [data-testid="stWarning"], [data-testid="alert-container"] * {
+        .stAlert, 
+        [data-testid="stError"], 
+        [data-testid="stWarning"], 
+        [data-testid="alert-container"] * {
             color: #000000 !important;
         }
-        [role="alert"] *, .stException {
+        [role="alert"] *, 
+        .stException {
             color: #000000 !important;
         }
         .stButton > button {
@@ -113,7 +141,9 @@ st.markdown(
             padding: 10px 20px;
             border: none;
         }
-        .stMarkdown h1, .stMarkdown h2, .stMarkdown p {
+        .stMarkdown h1, 
+        .stMarkdown h2, 
+        .stMarkdown p {
             color: #1e40af !important;
         }
         .element-container {
